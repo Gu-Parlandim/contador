@@ -48,11 +48,23 @@ body {
     margin: 10px;
     border-radius: 30px;
     border: none;
+    font-size:1.5em;
+    text-align: center;
 }
 
-.container-principal input:last-of-type {
+.container-principal input:focus{
+    outline: none;
+}
+
+
+.container-principal #botao-iniciar{
     background-color: var(--colorPrimary);
     color: #000;
     font-weight: 700;
     font-size: 1.5em;
+}
+
+.container-principal #botao-iniciar:hover {
+    cursor: pointer;
+    background-color: #288b19;
 }
