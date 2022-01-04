@@ -75,10 +75,10 @@ function gerandoHTML(){
 }
 
 function atualizadoTela(data){
-    let dias = document.querySelector("#Dias h3").innerHTML = `${doisDigitos(data.dias)}`
-    let horas = document.querySelector("#Horas h3").innerHTML = `${doisDigitos(data.horas)}`
-    let minutos = document.querySelector("#Minutos h3").innerHTML = `${doisDigitos(data.minutos)}`
-    let segundos = document.querySelector("#Segundos h3").innerHTML = `${doisDigitos(data.segundos)}`
+    document.querySelector("#Dias h3").innerHTML = `${doisDigitos(data.dias)}`
+    document.querySelector("#Horas h3").innerHTML = `${doisDigitos(data.horas)}`
+    document.querySelector("#Minutos h3").innerHTML = `${doisDigitos(data.minutos)}`
+    document.querySelector("#Segundos h3").innerHTML = `${doisDigitos(data.segundos)}`
 }
 
 
