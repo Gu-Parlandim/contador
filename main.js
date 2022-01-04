@@ -2,7 +2,6 @@ let dataInformada = document.querySelector("#input-data")
 let intevalo
 
 
-
 function inicioContador(){
     let finaldata = trasformarData()
     if(finaldata.segundos < 1){
@@ -20,7 +19,7 @@ function inicioContador(){
 
 
 function trasformarData(){
-    const dataCompleta = new Date(`${dataInformada.value} 00:00:00`)
+    let dataCompleta = new Date(`${dataInformada.value} 00:00:00`)
     const diaAtual = new Date()
     const diferenca = dataCompleta - diaAtual
     const dias = Math.floor(diferenca /1000 /60 /60 / 24)
@@ -95,4 +94,6 @@ function inicioHTML(){
         <input type="button"  id="botao-iniciar" onclick="inicioContador()" value=" Iniciar contagem">
     </main>
     `
+    dataInformada = document.querySelector("#input-data")
 }
+
